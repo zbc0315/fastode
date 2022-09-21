@@ -6,6 +6,7 @@
 # @Software: PyCharm
 
 from fastode.fast_log import FastLog
+from fastode.fast_xml import FastXML
 
 
 if __name__ == "__main__":

@@ -16,3 +16,13 @@ flog.logger.error("this is a error")
 flog.logger.fatal("this is a fatal")
 flog.logger.critical("this is a critical")
 ```
+
+## 2. FastXML
+
+```python
+from fastode import FastXML
+dom = FastXML.parse_string("<root><A><B>b</B><C>c</C></A><A1 upper='A1'>a1</A1></root>")
+dic = FastXML.xml_to_json(dom)
+
+FastXML.get_token_tag_pairs_and_attrs(dom, ['A'], ['upper'])
+```

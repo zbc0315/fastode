@@ -12,7 +12,7 @@ with open('README.md', 'r', encoding='utf-8')as f:
 
 setup(
     name='fastode',
-    version='0.0.1',
+    version='0.0.3',
     author='zhang',
     author_email='zhangbc0315@outlook.com',
     url='',
