@@ -15,7 +15,7 @@ setup(
     version='0.0.3',
     author='zhang',
     author_email='zhangbc0315@outlook.com',
-    url='',
+    url='https://github.com/zbc0315/fastode',
     description=u'A toolset to help make python programming faster',
     long_description=long_description,
     long_description_content_type='text/markdown',

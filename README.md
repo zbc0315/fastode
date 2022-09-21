@@ -2,6 +2,12 @@
 
 A toolset to help make python programming faster
 
+## INSTALL
+
+```bash
+pip install fastode
+```
+
 ## 1. FastLog
 
 ```python
