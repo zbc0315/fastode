@@ -12,11 +12,11 @@ with open('README.md', 'r', encoding='utf-8')as f:
 
 setup(
     name='fastode',
-    version='0.0.3',
+    version='0.0.4',
     author='zhang',
     author_email='zhangbc0315@outlook.com',
     url='https://github.com/zbc0315/fastode',
-    description=u'A toolset to help make python programming faster',
+    description=u'A toolset to help make python coding faster',
     long_description=long_description,
     long_description_content_type='text/markdown',
     packages=['fastode'],

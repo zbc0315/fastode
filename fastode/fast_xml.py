@@ -13,17 +13,17 @@ from xml.dom.minidom import Document, Element, Node, Text
 class FastXML:
 
     @classmethod
-    def parse_string(cls, xml_str: str):
+    def parse_string(cls, xml_str: str) -> Document:
         return parseString(xml_str)
 
     @classmethod
-    def _el_to_texts(cls, el: (Element, Node), res: [] = None) -> [str]:
+    def el_to_texts(cls, el: (Element, Node), res: [] = None) -> [str]:
         res = [] if res is None else res
         for child_el in el.childNodes:
             if isinstance(child_el, Text):
                 res.append(child_el.nodeValue)
             else:
-                res = cls._el_to_texts(child_el, res)
+                res = cls.el_to_texts(child_el, res)
         return res
 
     @classmethod
@@ -48,7 +48,7 @@ class FastXML:
         for attr in attrs:
             res_attrs[attr] = []
         for leaf_node in cls._get_leaf_nodes(xml, non_leaf_tags):
-            texts = cls._el_to_texts(leaf_node)
+            texts = cls.el_to_texts(leaf_node)
             token_tag_pairs.append((leaf_node.tagName, ' '.join(texts)))
             for attr in attrs:
                 res_attrs[attr].append(leaf_node.getAttribute(attr))

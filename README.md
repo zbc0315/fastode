@@ -1,6 +1,6 @@
 # Fastode
 
-A toolset to help make python programming faster
+A toolset to help make python coding faster
 
 ## INSTALL
 
